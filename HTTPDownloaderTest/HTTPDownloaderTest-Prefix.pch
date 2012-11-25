@@ -1,0 +1,30 @@
+//
+// Prefix header for all source files of the 'HTTPDownloaderTest' target in the 'HTTPDownloaderTest' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+#	define Log(fmt, ...) NSLog((@"%s:%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#	define Log1(obj)   Log(@"%s = %@", #obj, obj)
+#	define Log2(fmt,obj)   Log(@"%s = " @#fmt, #obj, obj)
+#	define LogPoint(p) Log(@"%s = %@", #p, NSStringFromCGPoint(p))
+#	define LogRect(r)  Log(@"%s = %@", #r, NSStringFromCGRect(r))
+#	define LogSize(s)  Log(@"%s = %@", #s, NSStringFromCGSize(s))
+#else 
+#	define Log(...) ;
+#	define Log1(...) ;
+#	define Log2(...) ;
+#	define LogPoint(p) ;
+#	define LogRect(p) ;
+#	define LogSize(p) ;
+#endif

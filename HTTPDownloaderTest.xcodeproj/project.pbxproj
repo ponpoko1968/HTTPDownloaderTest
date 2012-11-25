@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A68D877D163E884800BDF74F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D877C163E884800BDF74F /* UIKit.framework */; };
+		A68D877F163E884800BDF74F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D877E163E884800BDF74F /* Foundation.framework */; };
+		A68D8781163E884800BDF74F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D8780163E884800BDF74F /* CoreGraphics.framework */; };
+		A68D8787163E884800BDF74F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A68D8785163E884800BDF74F /* InfoPlist.strings */; };
+		A68D8789163E884800BDF74F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D8788163E884800BDF74F /* main.m */; };
+		A68D878D163E884800BDF74F /* DTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D878C163E884800BDF74F /* DTAppDelegate.m */; };
+		A68D878F163E884800BDF74F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A68D878E163E884800BDF74F /* Default.png */; };
+		A68D8791163E884800BDF74F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68D8790163E884800BDF74F /* Default@2x.png */; };
+		A68D8793163E884800BDF74F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68D8792163E884800BDF74F /* Default-568h@2x.png */; };
+		A68D8796163E884800BDF74F /* DTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D8795163E884800BDF74F /* DTViewController.m */; };
+		A68D8799163E884800BDF74F /* DTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D8797163E884800BDF74F /* DTViewController_iPhone.xib */; };
+		A68D879C163E884800BDF74F /* DTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D879A163E884800BDF74F /* DTViewController_iPad.xib */; };
+		A68D87DA163E8CF400BDF74F /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87C7163E8CF400BDF74F /* ASIAuthenticationDialog.m */; };
+		A68D87DB163E8CF400BDF74F /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87CA163E8CF400BDF74F /* ASIDataCompressor.m */; };
+		A68D87DC163E8CF400BDF74F /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87CC163E8CF400BDF74F /* ASIDataDecompressor.m */; };
+		A68D87DD163E8CF400BDF74F /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87CE163E8CF400BDF74F /* ASIDownloadCache.m */; };
+		A68D87DE163E8CF400BDF74F /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87D0163E8CF400BDF74F /* ASIFormDataRequest.m */; };
+		A68D87DF163E8CF400BDF74F /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87D2163E8CF400BDF74F /* ASIHTTPRequest.m */; };
+		A68D87E0163E8CF400BDF74F /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87D6163E8CF400BDF74F /* ASIInputStream.m */; };
+		A68D87E1163E8CF400BDF74F /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87D8163E8CF400BDF74F /* ASINetworkQueue.m */; };
+		A68D87E4163E8D4700BDF74F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D87E3163E8D4700BDF74F /* Reachability.m */; };
+		A68D87E6163E8D7000BDF74F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D87E5163E8D7000BDF74F /* SystemConfiguration.framework */; };
+		A68D87E8163E8D7700BDF74F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D87E7163E8D7700BDF74F /* CFNetwork.framework */; };
+		A68D87EA163E8D8100BDF74F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D87E9163E8D8000BDF74F /* MobileCoreServices.framework */; };
+		A68D87EC163E8D9600BDF74F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D87EB163E8D9600BDF74F /* libz.dylib */; };
+		A69CA13A164284AD00AA9B17 /* CPModalFileProcessingProgressViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69CA139164284AD00AA9B17 /* CPModalFileProcessingProgressViewController-iPad.xib */; };
+		A69CA13C164284FA00AA9B17 /* CPModalFileProcessingProgressViewController-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69CA13B164284FA00AA9B17 /* CPModalFileProcessingProgressViewController-iPhone.xib */; };
+		A69CA13D16428A5900AA9B17 /* CPModalFileProcessingProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69CA1381642849F00AA9B17 /* CPModalFileProcessingProgressViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A68D8778163E884800BDF74F /* HTTPDownloaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTPDownloaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68D877C163E884800BDF74F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A68D877E163E884800BDF74F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A68D8780163E884800BDF74F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A68D8784163E884800BDF74F /* HTTPDownloaderTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTTPDownloaderTest-Info.plist"; sourceTree = "<group>"; };
+		A68D8786163E884800BDF74F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A68D8788163E884800BDF74F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A68D878A163E884800BDF74F /* HTTPDownloaderTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HTTPDownloaderTest-Prefix.pch"; sourceTree = "<group>"; };
+		A68D878B163E884800BDF74F /* DTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAppDelegate.h; sourceTree = "<group>"; };
+		A68D878C163E884800BDF74F /* DTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAppDelegate.m; sourceTree = "<group>"; };
+		A68D878E163E884800BDF74F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A68D8790163E884800BDF74F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A68D8792163E884800BDF74F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A68D8794163E884800BDF74F /* DTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTViewController.h; sourceTree = "<group>"; };
+		A68D8795163E884800BDF74F /* DTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTViewController.m; sourceTree = "<group>"; };
+		A68D8798163E884800BDF74F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DTViewController_iPhone.xib; sourceTree = "<group>"; };
+		A68D879B163E884800BDF74F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DTViewController_iPad.xib; sourceTree = "<group>"; };
+		A68D87C6163E8CF400BDF74F /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = contrib/Classes/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		A68D87C7163E8CF400BDF74F /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = contrib/Classes/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		A68D87C8163E8CF400BDF74F /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = contrib/Classes/ASICacheDelegate.h; sourceTree = "<group>"; };
+		A68D87C9163E8CF400BDF74F /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = contrib/Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
+		A68D87CA163E8CF400BDF74F /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = contrib/Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
+		A68D87CB163E8CF400BDF74F /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = contrib/Classes/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		A68D87CC163E8CF400BDF74F /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = contrib/Classes/ASIDataDecompressor.m; sourceTree = "<group>"; };
+		A68D87CD163E8CF400BDF74F /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = contrib/Classes/ASIDownloadCache.h; sourceTree = "<group>"; };
+		A68D87CE163E8CF400BDF74F /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = contrib/Classes/ASIDownloadCache.m; sourceTree = "<group>"; };
+		A68D87CF163E8CF400BDF74F /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = contrib/Classes/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		A68D87D0163E8CF400BDF74F /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = contrib/Classes/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		A68D87D1163E8CF400BDF74F /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = contrib/Classes/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		A68D87D2163E8CF400BDF74F /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = contrib/Classes/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		A68D87D3163E8CF400BDF74F /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = contrib/Classes/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		A68D87D4163E8CF400BDF74F /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = contrib/Classes/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		A68D87D5163E8CF400BDF74F /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = contrib/Classes/ASIInputStream.h; sourceTree = "<group>"; };
+		A68D87D6163E8CF400BDF74F /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = contrib/Classes/ASIInputStream.m; sourceTree = "<group>"; };
+		A68D87D7163E8CF400BDF74F /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = contrib/Classes/ASINetworkQueue.h; sourceTree = "<group>"; };
+		A68D87D8163E8CF400BDF74F /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = contrib/Classes/ASINetworkQueue.m; sourceTree = "<group>"; };
+		A68D87D9163E8CF400BDF74F /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = contrib/Classes/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		A68D87E2163E8D4700BDF74F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = contrib/External/Reachability/Reachability.h; sourceTree = "<group>"; };
+		A68D87E3163E8D4700BDF74F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = contrib/External/Reachability/Reachability.m; sourceTree = "<group>"; };
+		A68D87E5163E8D7000BDF74F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A68D87E7163E8D7700BDF74F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A68D87E9163E8D8000BDF74F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A68D87EB163E8D9600BDF74F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A69CA1371642849F00AA9B17 /* CPModalFileProcessingProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPModalFileProcessingProgressViewController.h; sourceTree = "<group>"; };
+		A69CA1381642849F00AA9B17 /* CPModalFileProcessingProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPModalFileProcessingProgressViewController.m; sourceTree = "<group>"; };
+		A69CA139164284AD00AA9B17 /* CPModalFileProcessingProgressViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CPModalFileProcessingProgressViewController-iPad.xib"; sourceTree = "<group>"; };
+		A69CA13B164284FA00AA9B17 /* CPModalFileProcessingProgressViewController-iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CPModalFileProcessingProgressViewController-iPhone.xib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A68D8775163E884800BDF74F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68D87EC163E8D9600BDF74F /* libz.dylib in Frameworks */,
+				A68D8781163E884800BDF74F /* CoreGraphics.framework in Frameworks */,
+				A68D87EA163E8D8100BDF74F /* MobileCoreServices.framework in Frameworks */,
+				A68D87E8163E8D7700BDF74F /* CFNetwork.framework in Frameworks */,
+				A68D87E6163E8D7000BDF74F /* SystemConfiguration.framework in Frameworks */,
+				A68D877D163E884800BDF74F /* UIKit.framework in Frameworks */,
+				A68D877F163E884800BDF74F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A68D876D163E884800BDF74F = {
+			isa = PBXGroup;
+			children = (
+				A68D87EB163E8D9600BDF74F /* libz.dylib */,
+				A68D87E9163E8D8000BDF74F /* MobileCoreServices.framework */,
+				A68D87E7163E8D7700BDF74F /* CFNetwork.framework */,
+				A68D87E5163E8D7000BDF74F /* SystemConfiguration.framework */,
+				A68D87C3163E8CD700BDF74F /* contrib */,
+				A68D8782163E884800BDF74F /* HTTPDownloaderTest */,
+				A68D877B163E884800BDF74F /* Frameworks */,
+				A68D8779163E884800BDF74F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A68D8779163E884800BDF74F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A68D8778163E884800BDF74F /* HTTPDownloaderTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A68D877B163E884800BDF74F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A68D877C163E884800BDF74F /* UIKit.framework */,
+				A68D877E163E884800BDF74F /* Foundation.framework */,
+				A68D8780163E884800BDF74F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A68D8782163E884800BDF74F /* HTTPDownloaderTest */ = {
+			isa = PBXGroup;
+			children = (
+				A69CA1371642849F00AA9B17 /* CPModalFileProcessingProgressViewController.h */,
+				A69CA1381642849F00AA9B17 /* CPModalFileProcessingProgressViewController.m */,
+				A69CA139164284AD00AA9B17 /* CPModalFileProcessingProgressViewController-iPad.xib */,
+				A69CA13B164284FA00AA9B17 /* CPModalFileProcessingProgressViewController-iPhone.xib */,
+				A68D878B163E884800BDF74F /* DTAppDelegate.h */,
+				A68D878C163E884800BDF74F /* DTAppDelegate.m */,
+				A68D8794163E884800BDF74F /* DTViewController.h */,
+				A68D8795163E884800BDF74F /* DTViewController.m */,
+				A68D8797163E884800BDF74F /* DTViewController_iPhone.xib */,
+				A68D879A163E884800BDF74F /* DTViewController_iPad.xib */,
+				A68D8783163E884800BDF74F /* Supporting Files */,
+			);
+			path = HTTPDownloaderTest;
+			sourceTree = "<group>";
+		};
+		A68D8783163E884800BDF74F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A68D8784163E884800BDF74F /* HTTPDownloaderTest-Info.plist */,
+				A68D8785163E884800BDF74F /* InfoPlist.strings */,
+				A68D8788163E884800BDF74F /* main.m */,
+				A68D878A163E884800BDF74F /* HTTPDownloaderTest-Prefix.pch */,
+				A68D878E163E884800BDF74F /* Default.png */,
+				A68D8790163E884800BDF74F /* Default@2x.png */,
+				A68D8792163E884800BDF74F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A68D87C3163E8CD700BDF74F /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				A68D87C5163E8CDF00BDF74F /* ASIHttpRequest */,
+			);
+			name = contrib;
+			sourceTree = "<group>";
+		};
+		A68D87C5163E8CDF00BDF74F /* ASIHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A68D87E2163E8D4700BDF74F /* Reachability.h */,
+				A68D87E3163E8D4700BDF74F /* Reachability.m */,
+				A68D87C6163E8CF400BDF74F /* ASIAuthenticationDialog.h */,
+				A68D87C7163E8CF400BDF74F /* ASIAuthenticationDialog.m */,
+				A68D87C8163E8CF400BDF74F /* ASICacheDelegate.h */,
+				A68D87C9163E8CF400BDF74F /* ASIDataCompressor.h */,
+				A68D87CA163E8CF400BDF74F /* ASIDataCompressor.m */,
+				A68D87CB163E8CF400BDF74F /* ASIDataDecompressor.h */,
+				A68D87CC163E8CF400BDF74F /* ASIDataDecompressor.m */,
+				A68D87CD163E8CF400BDF74F /* ASIDownloadCache.h */,
+				A68D87CE163E8CF400BDF74F /* ASIDownloadCache.m */,
+				A68D87CF163E8CF400BDF74F /* ASIFormDataRequest.h */,
+				A68D87D0163E8CF400BDF74F /* ASIFormDataRequest.m */,
+				A68D87D1163E8CF400BDF74F /* ASIHTTPRequest.h */,
+				A68D87D2163E8CF400BDF74F /* ASIHTTPRequest.m */,
+				A68D87D3163E8CF400BDF74F /* ASIHTTPRequestConfig.h */,
+				A68D87D4163E8CF400BDF74F /* ASIHTTPRequestDelegate.h */,
+				A68D87D5163E8CF400BDF74F /* ASIInputStream.h */,
+				A68D87D6163E8CF400BDF74F /* ASIInputStream.m */,
+				A68D87D7163E8CF400BDF74F /* ASINetworkQueue.h */,
+				A68D87D8163E8CF400BDF74F /* ASINetworkQueue.m */,
+				A68D87D9163E8CF400BDF74F /* ASIProgressDelegate.h */,
+			);
+			name = ASIHttpRequest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A68D8777163E884800BDF74F /* HTTPDownloaderTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A68D879F163E884800BDF74F /* Build configuration list for PBXNativeTarget "HTTPDownloaderTest" */;
+			buildPhases = (
+				A68D8774163E884800BDF74F /* Sources */,
+				A68D8775163E884800BDF74F /* Frameworks */,
+				A68D8776163E884800BDF74F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTTPDownloaderTest;
+			productName = HTTPDownloaderTest;
+			productReference = A68D8778163E884800BDF74F /* HTTPDownloaderTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A68D876F163E884800BDF74F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "越智 修司";
+			};
+			buildConfigurationList = A68D8772163E884800BDF74F /* Build configuration list for PBXProject "HTTPDownloaderTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A68D876D163E884800BDF74F;
+			productRefGroup = A68D8779163E884800BDF74F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A68D8777163E884800BDF74F /* HTTPDownloaderTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A68D8776163E884800BDF74F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68D8787163E884800BDF74F /* InfoPlist.strings in Resources */,
+				A68D878F163E884800BDF74F /* Default.png in Resources */,
+				A68D8791163E884800BDF74F /* Default@2x.png in Resources */,
+				A68D8793163E884800BDF74F /* Default-568h@2x.png in Resources */,
+				A68D8799163E884800BDF74F /* DTViewController_iPhone.xib in Resources */,
+				A68D879C163E884800BDF74F /* DTViewController_iPad.xib in Resources */,
+				A69CA13A164284AD00AA9B17 /* CPModalFileProcessingProgressViewController-iPad.xib in Resources */,
+				A69CA13C164284FA00AA9B17 /* CPModalFileProcessingProgressViewController-iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A68D8774163E884800BDF74F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68D8789163E884800BDF74F /* main.m in Sources */,
+				A68D878D163E884800BDF74F /* DTAppDelegate.m in Sources */,
+				A68D8796163E884800BDF74F /* DTViewController.m in Sources */,
+				A68D87DA163E8CF400BDF74F /* ASIAuthenticationDialog.m in Sources */,
+				A68D87DB163E8CF400BDF74F /* ASIDataCompressor.m in Sources */,
+				A68D87DC163E8CF400BDF74F /* ASIDataDecompressor.m in Sources */,
+				A68D87DD163E8CF400BDF74F /* ASIDownloadCache.m in Sources */,
+				A68D87DE163E8CF400BDF74F /* ASIFormDataRequest.m in Sources */,
+				A68D87DF163E8CF400BDF74F /* ASIHTTPRequest.m in Sources */,
+				A68D87E0163E8CF400BDF74F /* ASIInputStream.m in Sources */,
+				A68D87E1163E8CF400BDF74F /* ASINetworkQueue.m in Sources */,
+				A68D87E4163E8D4700BDF74F /* Reachability.m in Sources */,
+				A69CA13D16428A5900AA9B17 /* CPModalFileProcessingProgressViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A68D8785163E884800BDF74F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68D8786163E884800BDF74F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A68D8797163E884800BDF74F /* DTViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68D8798163E884800BDF74F /* en */,
+			);
+			name = DTViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		A68D879A163E884800BDF74F /* DTViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68D879B163E884800BDF74F /* en */,
+			);
+			name = DTViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A68D879D163E884800BDF74F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A68D879E163E884800BDF74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A68D87A0163E884800BDF74F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HTTPDownloaderTest/HTTPDownloaderTest-Prefix.pch";
+				INFOPLIST_FILE = "HTTPDownloaderTest/HTTPDownloaderTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A68D87A1163E884800BDF74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HTTPDownloaderTest/HTTPDownloaderTest-Prefix.pch";
+				INFOPLIST_FILE = "HTTPDownloaderTest/HTTPDownloaderTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A68D8772163E884800BDF74F /* Build configuration list for PBXProject "HTTPDownloaderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68D879D163E884800BDF74F /* Debug */,
+				A68D879E163E884800BDF74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A68D879F163E884800BDF74F /* Build configuration list for PBXNativeTarget "HTTPDownloaderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68D87A0163E884800BDF74F /* Debug */,
+				A68D87A1163E884800BDF74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A68D876F163E884800BDF74F /* Project object */;
+}
